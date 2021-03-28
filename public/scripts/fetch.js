@@ -1,9 +1,11 @@
 $(document).ready(() => {
   loadArticle();
-  const $add = $('.add');
-  $add.click(() => {
-    counter++;
-    loadArticle()
+
+  $(window).scroll(() => {
+    if (($(document).height() - $(this).height()) <= ($(this).scrollTop())) {
+      counter++;
+      loadArticle()
+    }
   })
 });
 
@@ -32,7 +34,7 @@ const addNews = (news) => {
   const $news = (
     `<article>
     <h1>${news.title}</h1>
-    <img src=${news.urlToImage} alt=${news.title} href=${news.url}></img> 
+    <a href=${news.url}><img src=${news.urlToImage} alt=${news.title}></img></a>
     <p>${news.author}</p>
     <p>${news.description}</p>
     </article>`
