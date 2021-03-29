@@ -17,20 +17,35 @@ body {
 article {
   width: 60vw;
   margin: 1em auto;
-  background: lightgrey;
+  background: #fff;
   border-radius: 20px;
   padding: 1em;
 }
 
 h1 {
+  margin-top: 0;
   font-size: 2em;
 }
 
 img {
-  width: 25vw;
+  width: 50vw;
   height: auto;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
 }
 
 a {
   color: darkblue;
+}
+
+.author {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.description {
+  margin-top: 0.2em;
 }
