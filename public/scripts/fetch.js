@@ -24,7 +24,6 @@ const loadArticle = () => {
 }
 
 const renderNews = (newsData) => {
-  console.log(newsData)
   newsData.articles.map((data) => {
     const toAdd = addNews(data)
     $('.newsContainer').append(toAdd)
@@ -35,9 +34,9 @@ const addNews = (news) => {
   const $news = (
     `<article>
       <h1>${news.title}</h1>
-      <a href=${news.url}><img src=${news.urlToImage} alt=${news.title}></img></a>
-      <p>By: ${news.author}</p>
-      <p>${news.description} <a href=${news.url}>Read More...</a></p>
+      <a href=${news.url} class='photo'><img src=${news.urlToImage} alt=${news.title}></img></a>
+      <p class=author>By: ${news.author}</p>
+      <p class=description>${news.description} <a href=${news.url}>Read More...</a></p>
     </article>`
   )
   return $news;
