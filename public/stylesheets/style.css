@@ -57,4 +57,16 @@ a {
   color: #fff;
   font-size: 3em;
   margin: 1em;
+  cursor: pointer;
+  animation: jump 0.5s infinite;
+}
+
+@keyframes jump{
+  0% {transform: translate(0px, 1px);}
+  17% {transform: translate(0px, 2px);}
+  34% {transform: translate(0px, 1px);}
+  52% {transform: translate(0px, 0px);}
+  69% {transform: translate(0px, -1px);}
+  83% {transform: translate(0px, -2px);}
+  100% {transform: translate(0px, -1px);}
 }
