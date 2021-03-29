@@ -1,8 +1,36 @@
+html {
+  background: #fff;
+  background-image: url('../images/globe.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.newsContainer {
+  margin: 0 auto;
+  position: relative;
+}
+
+article {
+  width: 60vw;
+  margin: 1em auto;
+  background: lightgrey;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  width: 25vw;
+  height: auto;
 }
 
 a {
-  color: #00B7FF;
+  color: darkblue;
 }
