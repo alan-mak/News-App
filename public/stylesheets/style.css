@@ -49,3 +49,12 @@ a {
 .description {
   margin-top: 0.2em;
 }
+
+.arrow {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-size: 3em;
+  margin: 1em;
+}
