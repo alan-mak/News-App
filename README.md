@@ -14,13 +14,13 @@ To start application run `npm start`
 
 ## Final Product
 ### Landing Page
-![home]()
+![home](https://github.com/alan-mak/News-App/blob/master/doc/home.png)
 
 ### Infinite Scroll
-![scroll]()
+![scroll](https://github.com/alan-mak/News-App/blob/master/doc/InfiniteScroll.gif)
 
 ### Scroll to Top
-![top]()
+![top](https://github.com/alan-mak/News-App/blob/master/doc/ScrollTop.gif)
 
 ## Tech Stack
 * jQuery 3.6.0
